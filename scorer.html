@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="style.css">
+<script src="scrip.js"></script>
+
+<body>
+
+    <div class="matchstart" id="matchstart">
+        <h1>CodeHub Cricket Scorer</h1>
+        Enter Team 1 Name:<input type="text" id="t1"><br>
+        Enter Team 2 Name:<input type="text" id="t2"><br>
+        Which team batting first?<select id="batf">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select><br>
+        Enter overs:<input type="number" id="over" required><br>
+        <button onclick="start()">Start</button>
+    </div>
+
+    <div id="score" class="Scoreboard">
+
+        <div class="tnr t2">
+            <span id="team1"></span>
+            <div class="scoresl" id="score1">0/0</div>
+            <div class="overs" style="padding-left: 30px;" id="overs1"></div>
+        </div>
+
+        <div class="info">VS
+            <div class="winner" id="winner"></div>
+            <div class="winner" id="target"></div>
+        </div>
+
+
+        <div class="tnl "><span style="padding-left: 25px;" id="team2">CSK</span>
+            <div class="scoresr" id="score2">0/0</div>
+            <div class="overs" id="overs2"></div>
+        </div>
+    </div>
+
+    <div class="info" style="text-align: left;display: none;" id="infoT">Score Controls</div>
+
+
+    <div class="buttons" id="buttons">
+        <button onclick="scoreadd(1)">1</button>
+        <button onclick="scoreadd(2)">2</button>
+        <button onclick="scoreadd(3)">3</button>
+        <button onclick="scoreadd(4)">4</button>
+        <button onclick="scoreadd(5)">5</button>
+        <button onclick="scoreadd(6)">6</button>
+        <button onclick="scoreadd(7)">Wicket</button>
+        <button onclick="scoreadd(8)">Extras(wd,NB)</button>
+    </div>
+</body>
+
+</html>
